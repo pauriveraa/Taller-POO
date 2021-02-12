@@ -3,53 +3,36 @@ import java.util.Scanner;
 
 public class Electrodomestico {
 
-    boolean Procedencia;
-    char Consumo;
+    protected String Procedencia;
+    protected String Consumo;
 
-    public Electrodomestico(boolean procedencia, char consumo)
+    public Electrodomestico( String procedencia, String consumo)
     {
         this.Procedencia = procedencia;
         this.Consumo = consumo;
     }
 
-    public boolean GetProcedencia()
+    public String GetProcedencia()
     {
         return this.Procedencia;
     }
 
-    public void SetProcedencia(boolean procedencia)
+    public void SetProcedencia(String procedencia)
     {
     this.Procedencia = procedencia;
     }
 
-    public char GetConsumo()
+    public String GetConsumo()
     {
         return this.Consumo;
     }
 
-    public void SetConsumo(char consumo)
+    public void SetConsumo(String consumo)
     {
         this.Consumo = consumo;
     }
 }
 
 
-//Se crea una clase televisores con padre Electrodomesticos
 
-class Televisores extends Electrodomestico
-{
-    int Pulgadas;
-    boolean TDT;
-
-    public Televisores(int pulgadas, boolean tdt)
-    {
-        this.Pulgadas=pulgadas;
-        this.TDT=tdt;
-    }
-
-    public Televisores(int pulgadas)
-    {
-        this.Pulgadas=pulgadas;
-    }
-}
 
